@@ -64,6 +64,7 @@ targetSecretForm.addEventListener("submit", (e) => {
     } catch (error) {
       console.error("Error creating URL: ", error.message);
       if (url) {
+        // To decode the message and display it on balise h1
         targetSecretForm.style.display = "none";
         displaySecretMessage.style.display = "none";
         targetSecretLink.style.display = "block";
